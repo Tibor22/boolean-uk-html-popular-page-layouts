@@ -77,19 +77,10 @@
 .Gmail .main {
   background-color: turquoise;
   grid-area: main;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.Gmail .main a {
-  margin-top: 3rem;
-  text-decoration: none;
-  color: #fff;
-  font-size: 3rem;
-}
-.Gmail .main a:hover {
-  color: #c59191;
+  display: grid;
+  grid-template-rows: repeat(auto-fill, 1rem);
+  grid-template-columns: 1fr;
+  grid-auto-rows: 1rem;
 }
 .Gmail .right-side {
   background-color: orange;
@@ -98,4 +89,79 @@
 .Gmail .quick-settings {
   background-color: violet;
   grid-area: quick-settings;
+}
+
+.discord {
+  display: grid;
+  min-height: 100vh;
+  text-align: center;
+  grid-gap: 0.3rem;
+  grid-template: "far-left-side boolean-uk main-top" 60px "far-left-side left-invite main" 1fr "far-left-side  left-general main" 0.4fr "far-left-side  left-classes main" 1fr "far-left-side  left-lobby main" 0.6fr "far-left-side  left-start main" 1.3fr "far-left-side  left-profile main-bottom" 0.25fr/50px 1fr 4fr;
+}
+.discord .far-left-side {
+  grid-area: far-left-side;
+  background-color: brown;
+}
+.discord .boolean-uk {
+  grid-area: boolean-uk;
+  background-color: red;
+}
+.discord .left-invite {
+  grid-area: left-invite;
+  background-color: yellow;
+}
+.discord .left-general {
+  grid-area: left-general;
+  background-color: blue;
+}
+.discord .left-classes {
+  grid-area: left-classes;
+  background-color: rebeccapurple;
+}
+.discord .left-lobby {
+  grid-area: left-lobby;
+  background-color: orange;
+}
+.discord .left-start {
+  grid-area: left-start;
+  background-color: pink;
+}
+.discord .left-profile {
+  grid-area: left-profile;
+  background-color: gold;
+}
+.discord .main-top {
+  grid-area: main-top;
+  background-color: green;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.discord .main-top__classes {
+  grid-column: 1/3;
+  background-color: pink;
+}
+.discord .main-top__icons {
+  grid-column: 3;
+  background-color: red;
+}
+.discord .main-bottom {
+  grid-area: main-bottom;
+  background-color: #b0d3cf;
+}
+.discord .main {
+  background-color: turquoise;
+  grid-area: main;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.discord .main a {
+  margin-top: 3rem;
+  text-decoration: none;
+  color: #fff;
+  font-size: 3rem;
+}
+.discord .main a:hover {
+  color: #c59191;
 }/*# sourceMappingURL=main.css.map */
