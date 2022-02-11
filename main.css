@@ -1,0 +1,101 @@
+.linkedIn {
+  display: grid;
+  min-height: 100vh;
+  text-align: center;
+  grid-gap: 0.3rem;
+  grid-template: "profile header news" 1fr "profile main   news" 1fr "left-middle main right-middle" minmax(50px, 200px) "left-bottom main right-bottom" 1fr "left-bottom main right-bottom" 1fr/1fr 4fr 1.3fr;
+}
+.linkedIn .profile {
+  background-color: red;
+  grid-area: profile;
+}
+.linkedIn .header {
+  background-color: brown;
+  grid-area: header;
+}
+.linkedIn .news {
+  background-color: green;
+  grid-area: news;
+}
+.linkedIn .left-middle {
+  background-color: yellow;
+  grid-area: left-middle;
+}
+.linkedIn .left-bottom {
+  background-color: bisque;
+  grid-area: left-bottom;
+}
+.linkedIn .main {
+  background-color: turquoise;
+  grid-area: main;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.linkedIn .main a {
+  margin-top: 3rem;
+  text-decoration: none;
+  color: #fff;
+  font-size: 3rem;
+}
+.linkedIn .main a:hover {
+  color: #c59191;
+}
+.linkedIn .right-middle {
+  background-color: orange;
+  grid-area: right-middle;
+}
+.linkedIn .right-bottom {
+  background-color: violet;
+  grid-area: right-bottom;
+}
+
+.Gmail {
+  display: grid;
+  min-height: 100vh;
+  text-align: center;
+  grid-gap: 0.3rem;
+  grid-template: "header header header header" 80px "left-up  main   quick-settings  right-side" 1.3fr "left-middle main  quick-settings right-side" minmax(50px, 120px) "left-bottom main  quick-settings right-side" 1fr/1.2fr 4fr 1.3fr 60px;
+}
+.Gmail .header {
+  background-color: brown;
+  grid-area: header;
+}
+.Gmail .left-up {
+  background-color: red;
+  grid-area: left-up;
+}
+.Gmail .left-middle {
+  background-color: yellow;
+  grid-area: left-middle;
+}
+.Gmail .left-bottom {
+  background-color: bisque;
+  grid-area: left-bottom;
+}
+.Gmail .main {
+  background-color: turquoise;
+  grid-area: main;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.Gmail .main a {
+  margin-top: 3rem;
+  text-decoration: none;
+  color: #fff;
+  font-size: 3rem;
+}
+.Gmail .main a:hover {
+  color: #c59191;
+}
+.Gmail .right-side {
+  background-color: orange;
+  grid-area: right-side;
+}
+.Gmail .quick-settings {
+  background-color: violet;
+  grid-area: quick-settings;
+}/*# sourceMappingURL=main.css.map */

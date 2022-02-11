@@ -1,0 +1,126 @@
+// LinkedIn styles
+
+.linkedIn {
+  display: grid;
+  min-height: 100vh;
+  text-align: center;
+  grid-gap: 0.3rem;
+  grid-template:
+    "profile header news" 1fr
+    "profile main   news" 1fr
+    "left-middle main right-middle" minmax(50px, 200px)
+    "left-bottom main right-bottom" 1fr
+    "left-bottom main right-bottom" 1fr /
+    1fr 4fr 1.3fr;
+
+  .profile {
+    background-color: red;
+    grid-area: profile;
+  }
+  .header {
+    background-color: brown;
+    grid-area: header;
+  }
+  .news {
+    background-color: green;
+    grid-area: news;
+  }
+  .left-middle {
+    background-color: yellow;
+    grid-area: left-middle;
+  }
+
+  .left-bottom {
+    background-color: bisque;
+    grid-area: left-bottom;
+  }
+  .main {
+    background-color: turquoise;
+    grid-area: main;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    a {
+      margin-top: 3rem;
+      text-decoration: none;
+      color: #fff;
+      font-size: 3rem;
+      &:hover {
+        color: rgb(197, 145, 145);
+      }
+    }
+  }
+
+  .right-middle {
+    background-color: orange;
+    grid-area: right-middle;
+  }
+  .right-bottom {
+    background-color: violet;
+    grid-area: right-bottom;
+  }
+}
+
+// Gmail Styles
+
+.Gmail {
+  display: grid;
+  min-height: 100vh;
+  text-align: center;
+  grid-gap: 0.3rem;
+  grid-template:
+    "header header header header" 80px
+    "left-up  main   quick-settings  right-side" 1.3fr
+    "left-middle main  quick-settings right-side" minmax(50px, 120px)
+    "left-bottom main  quick-settings right-side" 1fr
+    /
+    1.2fr 4fr 1.3fr 60px;
+
+  .header {
+    background-color: brown;
+    grid-area: header;
+  }
+  .left-up {
+    background-color: red;
+    grid-area: left-up;
+  }
+
+  .left-middle {
+    background-color: yellow;
+    grid-area: left-middle;
+  }
+
+  .left-bottom {
+    background-color: bisque;
+    grid-area: left-bottom;
+  }
+  .main {
+    background-color: turquoise;
+    grid-area: main;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    a {
+      margin-top: 3rem;
+      text-decoration: none;
+      color: #fff;
+      font-size: 3rem;
+      &:hover {
+        color: rgb(197, 145, 145);
+      }
+    }
+  }
+
+  .right-side {
+    background-color: orange;
+    grid-area: right-side;
+  }
+  .quick-settings {
+    background-color: violet;
+    grid-area: quick-settings;
+  }
+}
