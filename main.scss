@@ -105,20 +105,22 @@
     // flex-direction: column;
     // height: 800px;
     display: grid;
-    grid-template-rows: repeat(auto-fill, 1rem);
+    grid-template-rows: repeat(auto-fill, 27px);
     grid-template-columns: 1fr;
+    .line {
+      margin-top: 3px;
+      border: 1px solid rgba(134, 122, 122, 0.507);
+      background-color: rgb(238, 229, 229);
 
-    grid-auto-rows: 1rem;
-
-    // a {
-    //   margin-top: 3rem;
-    //   text-decoration: none;
-    //   color: #fff;
-    //   font-size: 3rem;
-    //   &:hover {
-    //     color: rgb(197, 145, 145);
-    //   }
-    // }
+      a {
+        color: rgb(211, 113, 113);
+        text-decoration: none;
+        line-height: 22px;
+        &:hover {
+          color: white;
+        }
+      }
+    }
   }
 
   .right-side {

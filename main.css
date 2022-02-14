@@ -78,9 +78,21 @@
   background-color: turquoise;
   grid-area: main;
   display: grid;
-  grid-template-rows: repeat(auto-fill, 1rem);
+  grid-template-rows: repeat(auto-fill, 27px);
   grid-template-columns: 1fr;
-  grid-auto-rows: 1rem;
+}
+.Gmail .main .line {
+  margin-top: 3px;
+  border: 1px solid rgba(134, 122, 122, 0.507);
+  background-color: #eee5e5;
+}
+.Gmail .main .line a {
+  color: #d37171;
+  text-decoration: none;
+  line-height: 22px;
+}
+.Gmail .main .line a:hover {
+  color: white;
 }
 .Gmail .right-side {
   background-color: orange;
